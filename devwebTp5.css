@@ -1,0 +1,43 @@
+.overlay {
+   
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .7);
+    cursor: pointer;
+    display: grid;
+    place-content: center;
+}
+
+.overlay::after {
+    content: "X"; 
+    color: #fff;
+    background-color: #000;
+    font-family: sans-serif;
+    text-align: center;
+    line-height: 2rem;
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 2rem; 
+    height: 2rem;
+    border: white  solid 2px;
+    border-radius: 50%;
+}
+
+img {
+
+max-width: 100%;
+height: auto;
+
+}
+.overlay>figure {
+    margin: 5rem;
+    padding: 1rem;
+    border: 2px solid #FFFFFF;
+
+}
